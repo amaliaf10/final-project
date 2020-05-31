@@ -105,7 +105,7 @@
           set_fact:
             join_command: "{{ join_command_raw.stdout_lines[0] }}"
 
-    - hosts: worker1,worker2
+    - hosts: worker1,worker2,worker
       become: yes
       become_user: root
       tasks:  
